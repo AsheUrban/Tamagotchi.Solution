@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Tamagotchi
+namespace Nursery
 {
   public class Startup
   {
@@ -25,6 +25,7 @@ namespace Tamagotchi
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UseDeveloperExceptionPage();
       app.UseRouting();
 
       app.UseEndpoints(routes =>
