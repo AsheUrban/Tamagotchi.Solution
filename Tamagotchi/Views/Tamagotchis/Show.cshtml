@@ -9,7 +9,23 @@
     <h1>Tamagotchi Details: </h1>
 
     <h2>@Model.Name</h2>
+    <h3>@Model.Health</h3>
+    <p>@Model.Food</p>
+    <p>@Model.Sleep</p>
+    <p>@Model.Play</p>
 
+     <form action="/tamagotchis/{id}" method="post">
+      <button type="submit" name="button">Feed Me!</button>
+    </form>
+
+     <form action="/tamagotchis/{id}" method="post">
+      <button type="submit" name="button">I Need Sleep!</button>
+    </form>
+
+     <form action="/tamagotchis/{id}" method="post">
+      <button type="submit" name="button">Play With Me</button>
+    </form>
+    
     <a href='/tamagotchis/new'>Create a NEW Tamagotchi!</a>
     <a href='/tamagotchis'>View all your Tamagotchis</a>
   </body>

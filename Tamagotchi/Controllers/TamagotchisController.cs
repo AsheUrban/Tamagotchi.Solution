@@ -22,7 +22,7 @@ namespace Nursery.Controllers
     [HttpPost("/tamagotchis")]
     public ActionResult Create(string name)
     {
-      Tamagotchi myTamagotchi = new Tamagotchi(name);
+      Tamagotchi myTamagotchi = new Tamagotchi(name, 1);
       return RedirectToAction("Index");
     }
     
@@ -38,6 +38,14 @@ namespace Nursery.Controllers
     {
       Tamagotchi foundTamagotchi = Tamagotchi.Find(id);
       return View(foundTamagotchi);
+    }
+
+    [HttpGet("/tamagotchis/{id}")]
+    public ActionResult ShowStats(int foodQuantity, int sleepQuantity, int playQuantity)
+    {
+      
+      Tamagotchi tamagotchiStats = Tamagotchi.Find(id);
+      return View(tamagotchiStats);
     }
   }
 }
