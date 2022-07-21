@@ -6,27 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Tamagotchi Details: </h1>
 
-    <h2>@Model.Name</h2>
-    <h3>@Model.Health</h3>
-    <p>@Model.Food</p>
-    <p>@Model.Sleep</p>
-    <p>@Model.Play</p>
+      <h1>Tamagotchi Details: </h1>
 
-     <form action="/tamagotchis/{id}" method="post">
-      <button type="submit" name="button">Feed Me!</button>
-    </form>
+      <h2>@Model.Name : @Model.Health</h2>
 
-     <form action="/tamagotchis/{id}" method="post">
-      <button type="submit" name="button">I Need Sleep!</button>
-    </form>
-
-     <form action="/tamagotchis/{id}" method="post">
-      <button type="submit" name="button">Play With Me</button>
-    </form>
-    
-    <a href='/tamagotchis/new'>Create a NEW Tamagotchi!</a>
-    <a href='/tamagotchis'>View all your Tamagotchis</a>
+      <a href='/tamagotchis/new'>Create a NEW Tamagotchi!</a>
+      <a href='/tamagotchis'>View ALL your Tamagotchis</a>
   </body>
 </html>

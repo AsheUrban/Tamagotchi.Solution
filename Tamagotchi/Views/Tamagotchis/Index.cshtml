@@ -16,7 +16,7 @@
     <ul>
       @foreach (Tamagotchi tamagotchi in Model)
       {
-        <li><a href='/tamagotchis/@tamagotchi.Id'>@tamagotchi.Name</a></li>
+        <li><a href='/tamagotchis/@tamagotchi.Id'>@tamagotchi.Name : @tamagotchi.Health</a></li>
       }
     </ul>
 
